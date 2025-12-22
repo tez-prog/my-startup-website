@@ -7,21 +7,21 @@
   --neutral--neutral-darker: #141414;
   --neutral--neutral-dark: #262626;
   --background-color--packground-ploarisys: #02020d;
+  --text-color--text-2026: #efefe8;
   --brand-color--brand-light: #d6d3c2;
   --background-color--background-card: #000000e6;
   --brand-color--brand-dark: #999374;
   --neutral--white: white;
   --neutral--neutral-lightest: #e5e5e5;
+  --brand-color--background-blur: gold;
   --border-color--gold-gradient-lightest: var(--brand-color--brand-primary);
   --border-color--gold-gradient-darkest: var(--neutral--neutral-dark);
   --text-color--text-secondary-dark: var(--neutral--neutral);
   --border-color--gray-gradient-lightest: var(--neutral--neutral);
   --border-color--gray-gradient-darkest: var(--neutral--neutral-darker);
-  --text-color--text-2026: #efefe8;
   --neutral--neutral-darkest: #050505;
   --neutral--black: black;
   --neutral--neutral-light: #ccc;
-  --brand-color--background-blur: gold;
 }
 
 .w-layout-grid {
@@ -1207,6 +1207,7 @@ figure {
 
 .team-image {
   object-fit: cover;
+  object-position: 50% 50%;
   border-radius: 56px;
   width: 100%;
   height: 100%;
@@ -1223,6 +1224,10 @@ figure {
 
 .team-slide {
   margin-right: 64px;
+}
+
+.team-slide.extra-padding {
+  margin-bottom: 0;
 }
 
 .team-mask {
@@ -3932,7 +3937,7 @@ figure {
   }
 
   .menu-button {
-    background-color: var(--brand-color--brand-primary);
+    background-color: var(--text-color--text-2026);
     color: #000;
     border-radius: 12px;
     padding: 10px;
@@ -4213,7 +4218,7 @@ figure {
   }
 
   .display-heading {
-    font-size: 82px;
+    font-size: 60px;
   }
 
   .title-wrapper-left {
@@ -4496,6 +4501,11 @@ figure {
     min-height: 60px;
   }
 
+  .nav-link-2.blackmode {
+    background-color: var(--text-color--text-2026);
+    color: var(--border-color--gray-gradient-darkest);
+  }
+
   .pricing-section {
     background-position: 0 0, 50% 0;
     background-size: auto, auto;
@@ -4656,7 +4666,7 @@ figure {
   }
 
   .display-heading {
-    font-size: 72px;
+    font-size: 2rem;
   }
 
   .content-feature-grid {
@@ -4825,6 +4835,15 @@ figure {
     padding-right: 5%;
   }
 
+  .menu-button {
+    background-color: var(--text-color--text-2026);
+  }
+
+  .gradient-text {
+    color: var(--brand-color--background-blur);
+    -webkit-text-stroke-color: var(--neutral--neutral-darker);
+  }
+
   .hero-content-wrapper {
     grid-column-gap: 56px;
     grid-row-gap: 56px;
@@ -4930,9 +4949,17 @@ figure {
     display: block;
   }
 
+  .team-slide-header {
+    flex-flow: column;
+  }
+
   .team-slide {
     padding-left: 0;
     padding-right: 0;
+  }
+
+  .team-slide.extra-padding {
+    margin-bottom: 60px;
   }
 
   .team-mask {
@@ -4952,11 +4979,11 @@ figure {
   }
 
   .paragraph-large {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .display-heading {
-    font-size: 2.9rem;
+    font-size: 2.1rem;
   }
 
   .content-feature-grid {
@@ -4967,11 +4994,7 @@ figure {
     margin-bottom: 10px;
   }
 
-  .team-socials {
-    display: flex;
-  }
-
-  .investor-placeholder {
+  .team-socials, .team-socials.hidden, .investor-placeholder {
     display: none;
   }
 
@@ -4989,6 +5012,7 @@ figure {
   }
 
   .hide-mobile {
+    color: var(--background-color--packground-ploarisys);
     display: none;
   }
 
@@ -4998,8 +5022,16 @@ figure {
     height: 80px;
   }
 
+  .team-slide-content {
+    padding-bottom: 16px;
+  }
+
   .feature-card-content-wrapper {
     max-width: none;
+  }
+
+  .heading-2 {
+    text-align: center;
   }
 
   .home-integrations_logo-wrapper {
@@ -5083,6 +5115,10 @@ figure {
 
   .right-linear {
     max-width: 20%;
+  }
+
+  .text-24 {
+    font-size: 16px;
   }
 
   .paragraph-review {
@@ -5262,7 +5298,7 @@ figure {
     grid-area: span 1 / span 1 / span 1 / span 1;
   }
 
-  #w-node-f9b7329b-c4ac-1631-ba6f-d56d63a4035d-6b140392 {
+  #w-node-f9b7329b-c4ac-1631-ba6f-d56d63a4035d-6b140392, #w-node-_2f5272f0-ddc3-504b-565e-f36a6c3acddb-6b140392, #w-node-a1e57246-b814-3b84-f0e9-43886251c7a9-6b140392, #w-node-_39ecf316-0bca-6761-e6b5-f3087f8a4f69-6b140392, #w-node-_048d27ef-ca03-9e64-ebdc-40c1c394c204-6b140392, #w-node-_7acf82a3-609f-3798-b5fd-dbebd64c1756-6b140392, #w-node-f65b48c9-2c35-c6fe-5884-395af4c2f240-6b140392, #w-node-_82c18cef-79b4-00da-102f-5aa92dcc00d7-6b140392, #w-node-_51ae2e05-01b5-593d-4bb7-8400aa74e33b-6b140392, #w-node-_2cd0fe52-cde6-4c7a-d058-3c2e31fb1b4d-6b140392 {
     justify-self: center;
   }
 
